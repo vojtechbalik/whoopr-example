@@ -1,0 +1,24 @@
+cabal-version:      3.0
+name:               whoopr-example
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+author:             Vojtech Balik
+maintainer:         balikvo1@fit.cvut.cz
+category:           Web
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+
+common warnings
+    ghc-options: -Wall
+
+executable whoopr-example
+    main-is:          Main.hs
+
+    build-depends:    base ^>=4.17.2.1, whoopr, aeson, protolude, time, servant, servant-server, wai, warp
+    hs-source-dirs:   app
+    default-extensions: NoImplicitPrelude
+    default-language: Haskell2010
+
+    other-modules: Types, UserAPI, DB, WhooprUtil, GlueAPI, AppEnv
