@@ -7,7 +7,6 @@ author:             Vojtech Balik
 maintainer:         balikvo1@fit.cvut.cz
 category:           Web
 build-type:         Simple
-extra-doc-files:    CHANGELOG.md
 
 
 common warnings
